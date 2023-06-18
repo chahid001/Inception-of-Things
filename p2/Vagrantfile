@@ -1,0 +1,27 @@
+SERVER_IP="192.168.56.110"
+
+Vagrant.configure("2") do |config|
+
+  config.vm.define("schahidS") do |server|
+  
+    server.vm.box = "generic/centos8"
+    server.vm.hostname = "schahidS"
+    server.vm.network "private_network", ip: SERVER_IP
+    server.vm.network "forwarded_port", guest: 80, host: 80
+
+    server.vm.provider("virtualbox") do |vb|
+      vb.name = "server"
+      vb.memory = "1024"
+      vb.cpus = 1
+    end
+
+    server.vm.synced_folder "conf", "/scha"
+
+    server.vm.provision("shell") do |sh|
+      sh.path = "scripts/server.sh"
+      sh.args = [SERVER_IP]
+    end
+  
+  end
+
+end

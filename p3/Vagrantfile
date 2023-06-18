@@ -1,0 +1,19 @@
+Vagrant.configure("2") do |config|
+
+  config.vm.define("schahidS") do |server|
+  
+    server.vm.box = "generic/centos8"
+    server.vm.hostname = "schahidS"
+    config.vm.network "private_network", ip: "192.168.56.110"
+
+    server.vm.provider("virtualbox") do |vb|
+      vb.name = "server"
+      vb.memory = "2048"
+      vb.cpus = 2
+    end
+
+    server.vm.synced_folder "shared", "/scha"
+  
+  end
+
+end
