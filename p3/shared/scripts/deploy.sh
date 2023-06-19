@@ -22,18 +22,21 @@ i=0
 while [ $i -lt 240 ]
 do
     echo -n "/"
-    sleep 0.005
+    sleep 0.008
     i=$((i + 1))
     if [ $i = 60 ] || [ $i = 180 ];then
         echo ""
     fi
     if [ $i = 120 ]; then
+        echo ""
         echo "ArgoCD UI"
         echo "Username 🧑‍💻: admin"
         echo -n "Password 🔐: "
         # Password for ArgoCD UI
         kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
+        echo ""
         echo "ArgoCD UI 🌐: http://192.168.56.110:8080"
         echo "Schahid APP 🌐: http://192.168.56.110:9090"
     fi
 done
+echo ""
