@@ -56,9 +56,17 @@ Run two virtual machines using Vagrant and install on them K3S
 the first one will be installed in controller mode and the second will be installed in agent mode.
 
 **Part 2**
+One virtual machine with K3s in server mode installed. You will set up 3 web applications of your choice that will run in your K3s instance.
+You will have to be able to access them depending on the HOST used when making a request to the IP address 192.168.56.110.
+When a client inputs the ip 192.168.56.110 in his web browser with the HOST app1.com,
+the server must display the app1. When the HOST app2.com is used, the server must dis-
+play the app2. Otherwise, the app3 will be selected by default. (you ned to setup /etc/hosts)
 
 **Part 3**
+...
 
+**Bonus**
+...
     
 
 
