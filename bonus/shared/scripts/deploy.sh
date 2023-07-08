@@ -3,6 +3,7 @@
 # Create namespaces for argocd and dev(the app)
 kubectl create namespace argocd
 kubectl create namespace dev
+kubectl create namespace gitlab
 
 # Install ArgoCD
 kubectl apply -n argocd -f /scha/conf/install.yaml
@@ -17,6 +18,10 @@ kubectl apply -n argocd -f /scha/conf/ingress.yaml
 # Apply the app to be deployed in ArgoCD
 kubectl apply -n argocd -f /scha/conf/schahid.application.yaml
 sleep 5
+
+# Install gitlab runner
+helm repo add gitlab https://charts.gitlab.io
+helm install --namespace gitlab gitlab-runner -f /scha/conf/values.yaml gitlab/gitlab-runner
 
 i=0
 while [ $i -lt 240 ]

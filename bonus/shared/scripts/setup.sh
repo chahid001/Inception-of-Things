@@ -17,4 +17,15 @@ gpgkey=https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
 EOF
 sudo yum -y install kubectl
 
+#install helm
+curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
+chmod 700 get_helm.sh
+./get_helm.sh
+
+
+
+
 echo "everything is ready ✅ it's time to deploy"
+
+. /scha/scripts/deploy.sh
+

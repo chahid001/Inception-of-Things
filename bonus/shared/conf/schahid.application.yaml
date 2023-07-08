@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    repoURL: https://github.com/chahid001/IoT-test.git
+    repoURL: https://gitlab.com/chahid001/iot-bonus
     targetRevision: HEAD
     path: manifests
   syncPolicy:
