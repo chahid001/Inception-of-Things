@@ -63,6 +63,7 @@ play the app2. Otherwise, the app3 will be selected by default. (you need to set
 **Part 3**
 Run a virtual machine with K3D, and you have to set up a small infrastructure following the
 logic illustrated by the diagram below:
+![image](assets/Screenshot from 2023-07-09 17-32-58.png)
 
 **Bonus**
 ...
