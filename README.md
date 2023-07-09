@@ -18,13 +18,13 @@ Vagrant.
 
 ## Deployment
 
-p1 & p2
+**p1 & p2**
 
 ```bash
   vagrant up
 ```
 
-p3
+**p3**
 
 ```bash
   vagrant up
@@ -43,7 +43,7 @@ then run the scripts
   sh /scha/scripts/setup.sh
 ```
 
-Bonus
+**Bonus**
 
 same thing as Part 3.
 You need to create a Gitlab repository and add the runner token to your values.yaml
