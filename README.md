@@ -69,7 +69,7 @@ logic illustrated by the diagram below:
 **Bonus**
 
 The same thing as part 3, unless here we gonna add Gitlab CI, so instead of deploying the existing 
-docker image in Docker Hub, we can modify the Dockerfile or index.html in the GitLab [repository] (https://gitlab.com/chahid001/iot-bonus)
+docker image in Docker Hub, we can modify the Dockerfile or index.html in the GitLab [repository](https://gitlab.com/chahid001/iot-bonus)
 and that will trigger the GitLab CI pipeline and it's going to push a new image version to Docker Hub and modify the manifest file in the Github repo so can 
 the app be deployed.
 ...
