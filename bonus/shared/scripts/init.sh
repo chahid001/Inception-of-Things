@@ -6,7 +6,7 @@ sudo systemctl disable firewalld --now
 sudo yum -y update
 
 # install net-tools
-sudo yum -y install net-tools
+sudo yum -y install net-tools git
 
 echo "Installing Docker........."
 sudo yum install -y yum-utils

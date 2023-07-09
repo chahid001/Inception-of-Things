@@ -1,5 +1,19 @@
 #! /bin/bash
 
+while true; do
+
+read -p "Did you logged out before running this script? (y/n) " i
+
+case $i in
+    [y] ) echo "OK, starting setup .....";
+        break;;
+    [n] ) echo "please logout and try again";
+        exit;;
+    * ) echo "invalid response";
+esac
+
+done
+
 #install k3d
 curl -s https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh | bash
 
