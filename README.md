@@ -61,11 +61,17 @@ the server must display the app1. When the HOST app2.com is used, the server mus
 play the app2. Otherwise, the app3 will be selected by default. (you need to setup /etc/hosts)
 
 **Part 3**
+
 Run a virtual machine with K3D, and you have to set up a small infrastructure following the
 logic illustrated by the diagram below:
 ![](https://github.com/chahid001/Inception-of-Things/blob/main/assets/Screenshot%20from%202023-07-09%2017-32-58.png)
 
 **Bonus**
+
+The same thing as part 3, unless here we gonna add Gitlab CI, so instead of deploying the existing 
+docker image in Docker Hub, we can modify the Dockerfile or index.html in the GitLab [repository] (https://gitlab.com/chahid001/iot-bonus)
+and that will trigger the GitLab CI pipeline and it's going to push a new image version to Docker Hub and modify the manifest file in the Github repo so can 
+the app be deployed.
 ...
     
 
