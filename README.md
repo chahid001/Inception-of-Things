@@ -43,6 +43,11 @@ then run the scripts
   sh /scha/scripts/setup.sh
 ```
 
+Bonus
+
+same thing as Part 3.
+You need to create a Gitlab repository and add the runner token to your values.yaml
+before starting setup.sh 
 
 
 ## About the project
@@ -71,8 +76,7 @@ Run a virtual machine with K3D, and you have to set up a small infrastructure fo
 The same thing as part 3, unless here we gonna add Gitlab CI, so instead of deploying the existing 
 docker image in Docker Hub, we can modify the Dockerfile or index.html in the GitLab [repository](https://gitlab.com/chahid001/iot-bonus)
 and that will trigger the GitLab CI pipeline and it's going to push a new image version to Docker Hub and modify the manifest file in the Github repo so can 
-the app be deployed.
-...
+the app be deployed with Argo CD.
     
 
 
