@@ -45,8 +45,7 @@ then run the scripts
 
 **Bonus**
 
-same thing as Part 3.
-You need to create a Gitlab repository and add the runner token to your values.yaml
+the same thing as Part 3, plus you need to create a Gitlab repository and add the runner token to your values.yaml
 before starting setup.sh 
 
 
