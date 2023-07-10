@@ -77,7 +77,7 @@ docker image in Docker Hub, we can modify the Dockerfile or index.html in the Gi
 and that will trigger the GitLab CI pipeline and it's going to push a new image version to Docker Hub and modify the manifest file in the Github repo so can 
 the app be deployed with Argo CD.
 
-![](https://github.com/chahid001/Inception-of-Things/blob/main/assets/Screenshot%20from%202023-07-10%2022-28-33.png)
+![](https://github.com/chahid001/Inception-of-Things/blob/main/assets/Screenshot%20from%202023-07-10%2023-04-08.png)
     
 
 
