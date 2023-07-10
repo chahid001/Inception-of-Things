@@ -45,7 +45,7 @@ then run the scripts
 
 **Bonus**
 
-the same thing as Part 3, plus you need to create a Gitlab repository and add the runner token to your values.yaml
+the same thing as Part 3, and in addition to that you need to create a Gitlab repository and add the runner token to your values.yaml
 before starting setup.sh 
 
 
@@ -54,11 +54,11 @@ before starting setup.sh
 **Part 1**
 
 Run two virtual machines using Vagrant and install K3S on them
-the first one will be installed in controller mode and the second will be installed in agent mode.
+the first one will be installed in controller mode and the second in agent mode.
 
 **Part 2**
 
-Run one virtual machine with K3s in server mode installed. You will set up 3 web applications of your choice that will run in your K3s instance.
+Run one virtual machine with K3s in server mode installed. You will set up 3 web applications that will run in your K3s instance.
 You will have to be able to access them depending on the HOST used when making a request to the IP address 192.168.56.110.
 When a client inputs the ip 192.168.56.110 in his web browser with the HOST app1.com,
 the server must display the app1. When the HOST app2.com is used, the server must dis-
@@ -72,7 +72,7 @@ Run a virtual machine with K3D, and you have to set up a small infrastructure fo
 
 **Bonus**
 
-The same thing as part 3, unless here we gonna add Gitlab CI, so instead of deploying the existing 
+The same thing as part 3, unless here we going to add Gitlab CI, so instead of deploying the existing 
 docker image in Docker Hub, we can modify the Dockerfile or index.html in the GitLab [repository](https://gitlab.com/chahid001/iot-bonus)
 and that will trigger the GitLab CI pipeline and it's going to push a new image version to Docker Hub and modify the manifest file in the Github repo so can 
 the app be deployed with Argo CD.
