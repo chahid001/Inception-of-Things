@@ -1,8 +1,7 @@
 
 # Inception of Things
 
-This project aims to deepen your knowledge by making you use K3d and K3s with
-Vagrant.
+This project aims to introduce you to kubernetes from a developer perspective. You will have to set up small clusters and discover the mechanics of continuous integration and continuous deployment. At the end of this project you will be able to have a working cluster in docker and have a usable continuous integration and continuous deployment for your applications.
 
 # Tech used in the project
 
